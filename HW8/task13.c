@@ -39,7 +39,7 @@ int SelArray (int sourceArray [], int destArray[], int len)
     for(int i = 0; i < len; i++ )
     {
 
-        if (sourceArray[i] < 100)
+        if ((sourceArray[i] > -100) && (sourceArray[i] < 100))
             continue;
         if (sourceArray[i] / 10 % 10 == 0)
         {
